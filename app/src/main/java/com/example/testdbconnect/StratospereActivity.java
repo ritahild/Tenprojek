@@ -1,5 +1,7 @@
 package com.example.testdbconnect;
 
+import android.content.Intent;
+import android.widget.Button;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
@@ -55,5 +57,13 @@ public class StratospereActivity extends AppCompatActivity {
         {
             e.printStackTrace();
         }
+
+        Button minBtn =  findViewById((R.id.min));
+
+        minBtn.setOnClickListener(v->{
+            Intent MaIntent = new Intent(StratospereActivity.this, MainActivity.class);
+            startActivity(MaIntent);
+
+        });
     }
 }

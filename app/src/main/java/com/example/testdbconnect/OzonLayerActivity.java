@@ -1,5 +1,7 @@
 package com.example.testdbconnect;
 
+import android.content.Intent;
+import android.widget.Button;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
@@ -55,5 +57,12 @@ public class OzonLayerActivity extends AppCompatActivity {
         {
             e.printStackTrace();
         }
+        Button monBtn =  findViewById((R.id.mon));
+
+        monBtn.setOnClickListener(v->{
+            Intent MaIntent = new Intent(OzonLayerActivity.this, MainActivity.class);
+            startActivity(MaIntent);
+
+        });
     }
 }

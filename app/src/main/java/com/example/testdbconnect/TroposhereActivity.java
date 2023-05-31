@@ -1,5 +1,7 @@
 package com.example.testdbconnect;
 
+import android.content.Intent;
+import android.widget.Button;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
@@ -55,5 +57,13 @@ public class TroposhereActivity extends AppCompatActivity {
         {
             e.printStackTrace();
         }
+
+        Button menBtn =  findViewById((R.id.men));
+
+        menBtn.setOnClickListener(v->{
+            Intent MaIntent = new Intent(TroposhereActivity.this, MainActivity.class);
+            startActivity(MaIntent);
+
+        });
     }
 }
